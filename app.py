@@ -18,7 +18,7 @@ def predict_death_event(age,	anaemia,	creatinine_phosphokinase	,diabetes	,ejecti
 
 
 
-title = "Patient Survival Prediction"
+title = "Patient Death Prediction"
 description = "Predict survival of patient with heart failure, given their clinical record"
 
 out_response = gr.components.Textbox(type="text", label='Death_event')
