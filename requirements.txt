@@ -1,0 +1,4 @@
+gradio
+pickle5
+numpy
+xgboost
