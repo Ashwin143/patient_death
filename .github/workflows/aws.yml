@@ -50,14 +50,14 @@ jobs:
         fail-fast: false
     steps:
       - name: training step
-      - run: echo "training finished"
+        run: echo "training finished"
   test:
     runs-on: ubuntu-latest
     strategy:
         fail-fast: false
     steps:
       - name: testing step
-      - run: echo "testing finished"
+        run: echo "testing finished"
   deploy:
     needs: [train,test]
     name: Deploy
