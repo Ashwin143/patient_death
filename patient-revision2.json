@@ -1,0 +1,28 @@
+{
+    "family": "patient",
+    "containerDefinitions": [
+        {
+            "name": "sample-fargate",
+            "image": "887259875470.dkr.ecr.ap-south-1.amazonaws.com/patient_death_demo",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8001,
+                    "hostPort": 8001,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "executionRoleArn": "arn:aws:iam::887259875470:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "4096",
+    "memory": "16384"
+}
