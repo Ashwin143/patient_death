@@ -39,4 +39,4 @@ iface = gr.Interface(fn=predict_death_event,
         gr.Slider(1, 10, value=20, label="time"),
         ],
     outputs = [out_response])
-iface.launch()
+iface.launch(server_name = "0.0.0.0", server_port = 8001)
